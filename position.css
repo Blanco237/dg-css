@@ -1,0 +1,83 @@
+:root {
+    font-family: sans-serif;
+    padding-bottom: 4rem;
+    overflow-x: clip;
+    --padding-x: 2rem;
+    --padding-y: 1.5rem;
+    --box-size: 150px;
+}
+
+section {
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.relative {
+  background-color: aqua;
+}
+
+div {
+  width: var(--box-size);
+  height: var(--box-size);
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border: 2px solid black;
+}
+
+.relative .div1 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+  background-color: aquamarine;
+  position: relative;
+}
+
+.absolute .div1 {
+    position: absolute;
+    opacity: 0.5;
+    top: 10px;
+    left: 5px;
+}
+
+.fixed {
+    background-color: bisque;
+}
+
+.fixed .div1 {
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    background-color: black;
+}
+
+.sticky {
+    background-color: burlywood;
+    display: block;
+}
+
+.sticky .div1 {
+    position: sticky;
+    top: 50px;
+    background-color: blue;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header a {
+    color: white;
+}
