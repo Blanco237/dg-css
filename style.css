@@ -1,0 +1,121 @@
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  background: cadetblue;
+}
+
+#tech > div > h2 {
+  color: brown;
+}
+
+input {
+  border: none;
+  background-color: grey;
+}
+
+input[name="lname"] {
+  background-color: blanchedalmond;
+}
+
+a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  font-size: 2rem;
+}
+
+#remember:checked {
+  outline: 2px solid brown;
+}
+
+#tech::before {
+  content: "This comes before everything";
+}
+
+#tech::after {
+  content: "This comes after everything";
+}
+
+#tech > p::first-letter {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#tech > p::selection {
+  background-color: brown;
+  color: white;
+}
+
+#relative {
+  font-size: 10px;
+}
+
+#relative > p {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  background-color: brown;
+  padding: 10px 15px;
+  margin: 50px 10px;
+  margin-bottom: -20px;
+  margin-left: -50px;
+  /* padding: 10px 18px 3px 4px; */
+  /* padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 18px; */
+}
+
+:root {
+  font-size: 10px;
+}
+
+section {
+  width: 80vw;
+}
+
+section p {
+  font-size: 1.5rem;
+  width: 50%;
+  text-wrap: wrap;
+}
+
+.web-technologies {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+  /* list-style-image: url('./flower_pots.jpg'); */
+}
+
+.schedule {
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: antiquewhite; */
+  border: 2px solid antiquewhite;
+}
+
+.schedule thead tr {
+  background-color: black;
+  color: white;
+}
+
+.schedule tr {
+  background-color: white;
+  color: black;
+}
+
+
+
+.schedule tr:nth-child(even) {
+    background-color: rgb(175, 172, 172);
+}

@@ -1,0 +1,45 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  font-size: 2rem;
+  padding: 2rem 2.5rem;
+  background-color: brown;
+  width: fit-content;
+  font-weight: bold;
+  color: white;
+  border: 1px solid black;
+} 
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  row-gap: 25px;
+  column-gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar main main";
+    gap: 20px;
+}
+
+.box:first-child {
+    grid-area: sidebar;
+}
+
+.box:nth-child(2) {
+    grid-area: header;
+}
+
+.box:nth-child(3) {
+    grid-area: main;
+};
